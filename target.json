@@ -1,6 +1,6 @@
 {
   "name": "efm32-gcc",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Generic mbed build target for Silicon Labs EFM32 devices using the GCC toolchain.",
   "license": "Apache-2.0",
   "inherits": {
