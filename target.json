@@ -1,0 +1,37 @@
+{
+  "name": "efm32-gcc",
+  "version": "0.0.1",
+  "description": "Generic mbed build target for Silicon Labs EFM32 devices using the GCC toolchain.",
+  "license": "Apache-2.0",
+  "inherits": {
+    "mbed-gcc": "^1.1.0"
+  },
+  "keywords": [
+    "mbed-official",
+    "siliconlabs",
+    "efm32",
+    "gcc"
+  ],
+  "similarTo": [
+    "mbed-os",
+    "efm32",
+    "siliconlabs",
+    "silabs"
+  ],
+  "config": {
+    "cmsis": {
+      "nvic": {
+        "has-vtor": true,
+        "ram_vector_address": "(&__start_vector_table__)",
+        "flash_vector_address": "0x0",
+        "user_irq_offset": 16
+      }
+    },
+    "mbed-os": {
+      "stdio": {
+        "default-baud": 115200
+      }
+    }
+  },
+  "toolchain": "CMake/toolchain.cmake"
+}
